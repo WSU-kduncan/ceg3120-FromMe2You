@@ -79,4 +79,4 @@ You type a message explaining the reason(s) for the commit
 git push
 
 Screenshot of 
-[clone from system](clonecommandinsystem.PNG)
+![clone from system](clonecommandinsystem.PNG)
