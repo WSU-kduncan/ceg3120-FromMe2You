@@ -64,19 +64,26 @@ To run commands 2-4, you must be in the repository directory on the local system
 
 1. First time download of the git repository
 
-git clone git@34.234.25.91:Project1.git
+    git clone git@34.234.25.91:Project1.git
 
 2. Queueing a file/directory to git repository
 
-git add file/directory
+    git add file/directory
 
 3. Confirming the file/directory queue with a message
-git commit -a
+    git commit -a
 
 You type a message explaining the reason(s) for the commit
 
 4. Submit the git repository changes to the server
-git push
+    git push
 
-Screenshot of 
+Screenshot of cloning command on the local system
+
+
 ![clone from system](clonecommandinsystem.PNG)
+
+Screenshot of repository existing on system
+
+
+![repo on aws](repoinaws.PNG)
