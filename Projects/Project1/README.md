@@ -4,13 +4,13 @@
 
 ### Creating User Accounts
 
-    Command: sudo adduser pickname
+    Command: sudo adduser git
 
     Create a password
     Enter user information (optional)
-    This will create the user pickname as well as its home directory.
+    This will create the user git as well as its home directory.
 
-    To switch to the new user, you use su - pickname
+    To switch to the new user, you use su - git
 
 ### Create Initialize Git Repository
     Command: git init --bare reponame.git
