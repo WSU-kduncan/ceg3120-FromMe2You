@@ -74,7 +74,7 @@ To run commands 2-4, you must be in the repository directory on the local system
     
     git commit -a
 
-You type a message explaining the reason(s) for the commit
+    You type a message explaining the reason(s) for the commit
 
 4. Submit the git repository changes to the server
     
