@@ -4,7 +4,7 @@
 ### Create Initialize Git Repository
     Command: git init --bare reponame.git
 
-    This will create a blank git repository with handling data transfer, but without an workspace
+    This will create a blank git repository with handling data transfer, but without an workspace to add files
 
 ### Creating User Accounts
 
@@ -27,7 +27,7 @@
     - The second set is the permissions of the group
     - The last set is the permissions of anyone who is not the owner or within its assigned group
 
-    A permissions can be changed using the chmod command. Only use sudo if it requires.
+    Permissions can be changed using the chmod command. Only use sudo if it requires.
 
     chmod sets permission based on a 3-digit number
     3rd digit: Owner's Permissions
@@ -40,6 +40,10 @@
     0 = No Permissions
 
     You add the digits together, then you set it on the 3-digit number
+
+    Example: to set Bob who is the owner of a file to only read and write
+        
+        chmod 600 newfile.txt (4+2=6, read and write)
 
 ### SSH Keys
 
@@ -54,31 +58,40 @@
     2. PassPhrase
     3. Confirm PassPhrase
 
-    In either the path you specified or default is ~/.ssh/'Encryptiontype',
-    you copy the contents of the .pub file and paste it after typing ~/.ssh/authorized_keys file of the system you are connecting to.
+    In either the path you specified or default is ~/.ssh/'Encryptiontype', you copy the contents of the .pub file.
+    In the remote system, you must be logged in as the user to be used in the clone command.
+    Paste the public key content into ~/.ssh/authorized_keys file of the system you are connecting to.
 
-    Make sure the .ssh directory and the authorized_keys file is created by typing "mkdir ~/.ssh" and "vim authorized_keys"
+   **Note** Make sure the .ssh directory and the authorized_keys file is created by typing "mkdir ~/.ssh" and "vim authorized_keys"
 
 ## Git Usage
-    To run commands 2-4, you must be in the repository directory on the local system
+    To run commands 2-4, you must be inside of the repository directory to be 
 
-    1. First time download of the git repository
+ 1. First time download of the git repository
 
     git clone git@34.234.25.91:Project1.git
 
-    2. Queueing a file/directory to git repository
+   **Note** If the git server was initialized using the --bare command, the clone command will automatically create a empty workspace for the local system to work in. Otherwise it will also download the files included in the workspace to the local system.
+
+ 2. Queueing a file/directory to git repository
 
     git add file/directory
 
-    3. Confirming the file/directory queue with a message
+    If file or directory is in a subdirectory, you must specify the path
+
+ 3. Confirming the file/directory queue with a message
     
     git commit -a
 
-   **Note** You type a message explaining the reason(s) for the commit
+    The -a flag says any files that were not added to git, ignore
 
-    4. Submit the git repository changes to the server
+   **Note** You type a message explaining the reason(s) for the commit. Using text editor, the commit must be saved in order to proceed.
+
+ 4. Submit the git repository changes to the server
     
     git push
+
+   **Note** If an issue occurs with this command, check the ssh keys to make sure the correct permissions are set and the correct keys are used
 
 Screenshot of repository existing on system
 
