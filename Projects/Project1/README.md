@@ -78,12 +78,12 @@ You type a message explaining the reason(s) for the commit
 4. Submit the git repository changes to the server
     git push
 
-Screenshot of cloning command on the local system
-
-
-![clone from system](clonecommandinsystem.PNG)
-
 Screenshot of repository existing on system
 
 
 ![repo on aws](repoinaws.PNG)
+
+Screenshot of cloning command on the local system
+
+
+![clone from system](clonecommandinsystem.PNG)
