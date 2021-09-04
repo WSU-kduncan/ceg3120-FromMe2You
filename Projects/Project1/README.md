@@ -1,16 +1,23 @@
 # CEG3120-Project 01
 
 ## Setup
-### Create Initialize Git Repository
-    Command: git init --bare reponame.git
-
-    This will create a blank git repository with handling data transfer, but without an workspace to add files
 
 ### Creating User Accounts
 
     Command: sudo adduser pickname
 
+    Create a password
+    Enter user information (optional)
     This will create the user pickname as well as its home directory.
+
+    To switch to the new user, you use su - pickname
+
+### Create Initialize Git Repository
+    Command: git init --bare reponame.git
+
+    git init command will initialize the directory into an git repository with a workspace to immediately add files
+    If you include the --bare command, this is used to create empty repository to be used remotely.
+**Note** It is usually best to create the new repository in the home directory of the user using that repository.
 
 ### Permissions
     Each file and directories contains permissions that only allow certain users from accessing
