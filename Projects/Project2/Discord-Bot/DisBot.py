@@ -30,11 +30,11 @@ async def on_message(message):
         return
 
     cool_facts = [
-         'The first oranges weren’t orange, but green',
-         'McDonald’s once made bubblegum-flavored broccoli',
-         'Q is the only letter that does not appear in any U.S. state name',
-	 'Johnny Chapman (Appleseed) planted apple trees, but apples were much bitter, only to be used in cider',
-	 'Kleenex tissues were originally intended for gas masks'
+        'The first oranges weren’t orange, but green',
+        'McDonald’s once made bubblegum-flavored broccoli',
+        'Q is the only letter that does not appear in any U.S. state name',
+	    'Johnny Chapman (Appleseed) planted apple trees, but apples were much bitter, only to be used in cider',
+	    'Kleenex tissues were originally intended for gas masks'
     ]
 	#https://www.rd.com/list/interesting-facts/
     if message.content == 'learn!':
