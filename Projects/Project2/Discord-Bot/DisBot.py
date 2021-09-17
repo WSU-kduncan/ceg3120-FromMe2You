@@ -45,7 +45,4 @@ async def on_message(message):
     if message.content == 'learn!':
         response = random.choice(cool_facts)
         await message.channel.send(response)
-    if message.content == 'future!':
-	response = random.choice(odd_quotes)
-	await message.channel.send(response)
 client.run(TOKEN)
