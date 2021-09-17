@@ -29,11 +29,6 @@ async def on_message(message):
     if message.author == client.user:
         return
 
-    odd_quotes = [
-        'Who knows what the future will bring',
-	'what do you thing will happen now'
-    ]
-
     cool_facts = [
          'The first oranges weren’t orange, but green',
          'McDonald’s once made bubblegum-flavored broccoli',
