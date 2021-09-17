@@ -29,25 +29,23 @@ async def on_message(message):
     if message.author == client.user:
         return
 
-    brooklyn_99_quotes = [
-        'I\'m the human form of the 💯 emoji.',
-        'Bingpot!',
-        (
-            'Cool. Cool cool cool cool cool cool cool, '
-            'no doubt no doubt no doubt no doubt.'
-        ),
+    odd_quotes = [
+        'Who knows what the future will bring',
+	'what do you thing will happen now'
     ]
 
-    hitchhiker_quotes = [
-        'There is an art, it says, or rather, a knack to flying. The knack lies in learning how to throw yourself at the ground and miss.',
-        'It is a mistake to think you can solve any major problems just with potatoes.',
-        'In the beginning the Universe was created. This has made a lot of people very angry and been widely regarded as a bad move.',
-        'A common mistake that people make when trying to design something completely foolproof is to underestimate the ingenuity of complete fools.',
+    cool_facts = [
+         'The first oranges weren’t orange, but green',
+         'McDonald’s once made bubblegum-flavored broccoli',
+         'Q is the only letter that does not appear in any U.S. state name',
+	 'Johnny Chapman (Appleseed) planted apple trees, but apples were much bitter, only to be used in cider',
+	 'Kleenex tissues were originally intended for gas masks'
     ]
-
-    if message.content == 'towel!':
-        #response = random.choice(brooklyn_99_quotes)
-        response = random.choice(hitchhiker_quotes)
+	#https://www.rd.com/list/interesting-facts/
+    if message.content == 'learn!':
+        response = random.choice(cool_facts)
         await message.channel.send(response)
-
+    if message.content == 'future!':
+	response = random.choice(odd_quotes)
+	await message.channel.send(response)
 client.run(TOKEN)
