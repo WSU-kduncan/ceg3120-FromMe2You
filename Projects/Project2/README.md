@@ -2,7 +2,7 @@
 
 ## Setup
 
-# Getting an API
+### Getting an API
 
 In order to get an API, you must have an account on the [Discord development portal](https://discord.com/developers/applications).
 
@@ -33,7 +33,7 @@ In order to enable the bot in Discord, type the command "python DisBot.py" or "p
 
 The command will output that it is connected to Discord or it will output an error. From there the terminal does not have to be touched.
 
-# Dependencies
+### Dependencies
 You would need to install two python packages
 
 1. Discord
@@ -45,12 +45,12 @@ Install them by opening an terminal or command prompt and typing command
 
 ## Usage
 
-# Commands
+### Commands
 
 - learn!
 - rolldice!
 
-# Command Outputs
+### Command Outputs
 
 - learn! will output any random facts may or may not have been unknown
 - rolldice! will institute an dice roll where it will randomize three times and will output the result
