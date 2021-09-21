@@ -40,6 +40,11 @@ You would need to install two python packages
 2. dotenv
 
 Install them by opening an terminal or command prompt and typing command
+"pip install -U python-dotenv"
+"pip install discord.py"
+
+
+Alternatively, these commands can be used if more than one python version is installed
 "pip3 install -U python-dotenv"
 "pip3 install discord.py"
 
@@ -52,5 +57,5 @@ Install them by opening an terminal or command prompt and typing command
 
 ### Command Outputs
 
-- learn! will output any random facts may or may not have been unknown
-- rolldice! will institute an dice roll where it will randomize three times and will output the result
+- learn! will output any random facts may or may not have been known
+- rolldice! will institute an dice roll where it will randomize three times and will output the 4th randomized number
