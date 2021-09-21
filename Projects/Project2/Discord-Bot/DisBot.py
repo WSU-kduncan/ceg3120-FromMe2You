@@ -36,8 +36,26 @@ async def on_message(message):
 	    'Johnny Chapman (Appleseed) planted apple trees, but apples were much bitter, only to be used in cider',
 	    'Kleenex tissues were originally intended for gas masks'
     ]
+    roll_dice = [
+        '1',
+        '2',
+        '3',
+        '4',
+        '5',
+        '6'
+    ]
 	#https://www.rd.com/list/interesting-facts/
     if message.content == 'learn!':
         response = random.choice(cool_facts)
         await message.channel.send(response)
+    
+    if message.content == 'rolldice!':
+        await message.channel.send('Rolling Dice')
+        response = random.choice(roll_dice)
+        await message.channel.send('Still rolling')
+        response = random.choice(roll_dice)
+        await message.channel.send('Even more rolling')
+        response = random.choice(roll_dice)
+        await message.channel.send('You rolled a ' + response)
+
 client.run(TOKEN)
