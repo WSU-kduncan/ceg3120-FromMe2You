@@ -59,3 +59,7 @@ Alternatively, these commands can be used if more than one python version is ins
 
 - learn! will output any random facts may or may not have been known
 - rolldice! will institute an dice roll where it will randomize three times and will output the 4th randomized number
+
+# ScreenShot of Commands
+
+![Bot Commands in Action](BotCommands.PNG)
