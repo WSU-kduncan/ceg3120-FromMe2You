@@ -14,7 +14,7 @@ Click "Add Bot", Select "Yes, do it"
 
 Under Token, click "Copy"
 
-## Put API Key in the code
+### Put API Key in the code
 
 In the same directory as the bot.py file, create an new file named .env
 
@@ -56,23 +56,23 @@ Alternatively, these commands can be used if more than one python version is ins
 
 "pip3 install discord.py"
 
-# Usage
+## Usage
 
-## Commands
+### Commands
 
 - learn!
 - rolldice!
 
-## Command Outputs
+### Command Outputs
 
 - learn! will output any random facts may or may not have been known
 - rolldice! will institute an dice roll where it will randomize three times and will output the 4th randomized number
 
-## ScreenShot of Commands
+### ScreenShot of Commands
 
 ![Bot Commands in Action](BotCommands.PNG)
 
-# Research
+## Research
 
 If you planning to run your discord bot 24/7 but do not want to use your personal computer. Here are some alternatives to work with
 
