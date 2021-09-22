@@ -49,7 +49,7 @@ async def on_message(message):
         response = random.choice(cool_facts)
         await message.channel.send(response)
     
-    if message.content == 'rolldice!':
+    if message.content == 'rollthedice!':
         await message.channel.send('Rolling Dice')
         response = random.choice(roll_dice)
         await message.channel.send('Still rolling')
