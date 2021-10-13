@@ -35,11 +35,13 @@ Security Group is a firewall. It will only allow certain ip address and certain 
 
 AMI Selection: Amazon Linux 2 (x86)
 
+Default User: ec2-user
+
 Instance Type: t2.micro
 
 Attaching Instance to VPC: In Instance Details, I went under network, click dropdown menu. I then selected my VPC, which included my lastname
 
-Auto Assign IP Address: I disabled this setting because Amazon could use dynmaic IP Addresses and could reset my public IP address at any moment. We will be setting an static public IP address
+Auto Assign IP Address: I disabled this setting because Amazon could use dynmaic IP addresses and could reset my public IP address at any moment, in which I would have to constantly log in to see the new IP address. We will be setting an static public IP address
 
 Adding a volume: The root volume is automatically set but you can customize the volume space by typing in the number in the textbox. I just left it at 8GB. I also left the disk type at GP SSD 2. You may change it to another type, but there are costs
 
