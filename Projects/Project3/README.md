@@ -39,23 +39,29 @@ Default User: ec2-user
 
 Instance Type: t2.micro
 
-Attaching Instance to VPC: In Instance Details, I went under network, click dropdown menu. I then selected my VPC, which included my lastname
+Attaching Instance to VPC: In Instance Details, I went under network, click dropdown menu. I then selected my VPC, "Angerer-VPC"
 
 Auto Assign IP Address: I disabled this setting because Amazon could use dynmaic IP addresses and could reset my public IP address at any moment, in which I would have to constantly log in to see the new IP address. We will be setting an static public IP address
 
 Adding a volume: The root volume is automatically set but you can customize the volume space by typing in the number in the textbox. I just left it at 8GB. I also left the disk type at GP SSD 2. You may change it to another type, but there are costs
 
-Adding Tags: I clicked the "Add Tag" button. In the "Key" textbox, I put "Name". I pressed the tab key and typed my "lastname-instance"
+Adding Tags: I clicked the "Add Tag" button. In the "Key" textbox, I put "Name". I pressed the tab key and typed "Angerer-instance"
 
-Configure Security Groups: I clicked the option under "Assign a security group", "Select existing group". It displayed a list of all security group ids. I simply selected the one I created with my lastname and verified the rules associated with it
+Configure Security Groups: I clicked the option under "Assign a security group", "Select existing group". It displayed a list of all security group ids. I simply selected the one I created, "Angerer-sg" and verified the rules associated with it
 
 Associate Elastic IP Address: On the side bar, I clicked Elastic IP address, clicked "Allocate Elastic IP Address. I left the Network Border Group as default of "us-east-1". I set a tag for the ip address
 
-I selected the IP address, went to "Actions" and clicked "Associate Elastic IP Address". Left Resource Type to Instance. I chose the Lastname instance. I set a private Ip Address. Because this is the only ip address, I do not need to check reassociate ip address because I am not going to use it again.
+I selected the IP address, went to "Actions" and clicked "Associate Elastic IP Address". Left Resource Type to Instance. I chose the Angerer-instance. I set a private Ip Address. Because this is the only ip address, I do not need to check reassociate ip address because I am not going to use it again.
 
 ### Instance Creation
 
 ![Instance Creation screenshot](Images/Instance_Creation.PNG)
+
+### Hostname Change
+
+I copied the hostname file using this command: cp /etc/hostname hostname.old
+
+I typed the command hostname Angerer-Linux2
 
 ### SSH Connection
 
