@@ -21,23 +21,23 @@ Mappings:
   AWSRegionUbuntu: # AMI for Ubuntu server in each supported region 
     us-east-1:   # N. Virginia
       PV64: NOT_SUPPORTED
-      HVM64: ami-02e136e904f3da870
+      HVM64: ami-07d0cf3af28718ef8
       HVMG2: NOT_SUPPORTED
 Resources:
   VPC:
     Type: 'AWS::EC2::VPC'
     Properties:
-      CidrBlock: 10.0.0.0/24
+      CidrBlock: 10.0.0.0/16
       Tags:
         - Key: Application
           Value: !Ref 'AWS::StackId'
         - Key: Name
-          Value: CEG2350 VPC
+          Value: CEG3120 VPC
   Subnet:
     Type: 'AWS::EC2::Subnet'
     Properties:
       VpcId: !Ref VPC
-      CidrBlock: 10.0.0.0/28
+      CidrBlock: 10.0.0.0/24
       Tags:
         - Key: Application
           Value: !Ref 'AWS::StackId'
@@ -125,10 +125,10 @@ Resources:
         Fn::Base64:
           !Sub |
             #!/bin/bash -xe
-            apt-get update && \
-            apt-get install -y \
+            sudo hostnamectl set-hostname ec2instance && \
+            sudo apt-get update && \
+            sudo apt-get install -y \
             python3 \
             python3-pip \
             git && \
-            hostnamectl set-hostname coolmachine
             reboot
