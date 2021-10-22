@@ -126,7 +126,9 @@ Resources:
           !Sub |
             #!/bin/bash -xe
             apt-get update && \
-            apt-get install python3 -y \
-            apt-get install python3-pip -y && apt-get install git -y && \
+            apt-get install -y \
+            python3 \
+            python3-pip \
+            git && \
             hostnamectl set-hostname coolmachine
             reboot
