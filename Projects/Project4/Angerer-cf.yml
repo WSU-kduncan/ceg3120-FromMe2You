@@ -1,4 +1,4 @@
-AWSTemplateFormatVersion: 2010-09-09
+AWSTemplateFormatVersion: 2021-10-25
 Description: >-
   Angerer CF Template to create a VPC, allow SSH access from trusted networks, and create a single instance with an Elastic IP address.
 Parameters:
