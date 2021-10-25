@@ -131,4 +131,4 @@ Resources:
             python3 \
             python3-pip \
             git && \
-            reboot
+            sudo reboot
