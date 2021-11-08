@@ -5,6 +5,7 @@
     b. The haproxy.cfg is the config file in /etc/haproxy folder
     
     c. The contents at end of file:
+    
         frontend myfrontend
             mode http
             bind *:80
