@@ -177,7 +177,7 @@ Resources:
             #!/bin/bash -xe
             apt-get update && \
             apt-get install -y apache2 git && \
-            hostnamectl set-hostname ToWebServ1
+            hostnamectl set-hostname ToWebServ1 && \
             reboot
   WebServ2Instance:
     Type: 'AWS::EC2::Instance'
@@ -211,5 +211,5 @@ Resources:
             #!/bin/bash -xe
             apt-get update && \
             apt-get install -y apache2 git && \
-            hostnamectl set-hostname ToWebServ2
+            hostnamectl set-hostname ToWebServ2 && \
             reboot
