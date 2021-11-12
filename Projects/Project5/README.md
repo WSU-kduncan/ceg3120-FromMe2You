@@ -12,6 +12,7 @@
             default_backend backservers
 
         backend backservers
+            balance roundrobin
             mode http
             server s1 10.0.0.9:80
             server s2 10.0.0.10:80
@@ -34,3 +35,7 @@
     Web Server 2
 
     ![Web Server 2 screenshot](Server2Site.PNG)
+
+6. 
+
+    Link to Site: http://54.144.202.197
