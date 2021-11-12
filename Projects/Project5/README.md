@@ -1,5 +1,5 @@
 1. The /etc/hosts file is configured so that any private or public IPs can be attached to an custom hostname. Each hostname is set up with the ip of the remote system followed by the custom hostname. For example: "10.0.0.9 web1"
-2. copy the private key from local system to the proxy server. Since the web servers have the same public ips, all need to type in proxy system is "ssh -i privatekey.pem ubuntu@web1". While web1 is configured in /etc/hosts as 10.0.0.9
+2. Since the web servers have the same public ips, all need to type in proxy system is "ssh -i privatekey.pem ubuntu@web1". While web1 and web2 is configured in /etc/hosts as 10.0.0.9
 3. 
     a. apt-get install -y haproxy
     b. The haproxy.cfg is the config file in /etc/haproxy folder
